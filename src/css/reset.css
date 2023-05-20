@@ -1,0 +1,11 @@
+* {
+    margin: 0;
+    /* Usado para o espaçamento entre o conteúdo */
+    padding: 0;
+    /*Usado para o espaçamento entre das margens para o conteúdo*/
+    box-sizing: border-box
+}
+
+ul {
+    list-style: none;
+}
