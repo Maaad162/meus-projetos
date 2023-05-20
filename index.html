@@ -1,196 +1,72 @@
-<!DOCTYPE html>
-<html lang="en">
+<html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Listagem Pokémon - Semana ao Zero ao programador contratado</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@300;500;800&display=swap"
-        rel="stylesheet">
 
-    <link rel="stylesheet" href="./src/css/reset.css">
-    <link rel="stylesheet" href="./src/css/estilos.css">
-    <link rel="stylesheet" href="./src/css/scrollbar.css">
 </head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jost:wght@300;400&display=swap" rel="stylesheet">
+<title>QR Code</title>
+<style>
+    * {
+        margin: 0 auto;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-<body>
-    <header>
-        <a href="/">
-            <img src="./src/imagens/pokeball.png" alt="Pokeball" class="logo">
-        </a>
-        <button id="botao-alterar-tema">
-            <img src="./src/imagens/sun.png" alt="Sun image" class="imagem-botao">
-        </button>
-    </header>
-    <main>
-        <ul class="pokemon-list">
-            <li class="pokemon-card">
-                <div class="information">
-                    <span>Bulbasaur</span>
-                    <span>#001</span>
-                </div>
+    .body {
+        background-color: lightblue;
+        width: 30em;
+        height: 38em;
+        padding: 3em;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1em;
+        font-family: 'Jost', sans-serif;
+        font-size: 1.5rem;
+        text-align: center;
+    }
 
-                <img src="./src/imagens/bulbasaur.gif" alt="Bulbasaur" class="gif">
+    .container {
+        background-color: white;
+        width: 19em;
+        height: 30em;
+        border-radius: 1em;
+        padding-top: 1em;
 
-                <ul class="types">
-                    <li class="grass type">Grama</li>
-                    <li class="poison type">Veneno</li>
-                </ul>
+    }
 
-                <p class="description">Há uma semente te planta em suas costas desde de o dia que este pokémon nasce, a
-                    semente cresce lentamente.</p>
-            </li>
-            <li class="pokemon-card">
-                <div class="information">
-                    <span>Ivysaur</span>
-                    <span>#002</span>
-                </div>
+    .div {
+        width: 17em;
+        height: 17em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-radius: 1em;
+    }
+    
+    .p1, .p2{
+        padding-top: 1em;
+        width: 14em;
+    }
+ 
+</style>
 
-                <img src="./src/imagens/ivysaur.gif" alt="Ivysaur" class="gif">
+<body class="body">
+    <div class="container">
+        <div class="qrcodediv">
+            <img src="./imagem/image-qr-code.png" alt="QR Code" class="div">
+            <h3 class="p2">
+                Improve your front-end skills by building projects class
+            </h3>
 
-                <ul class="types">
-                    <li class="grass type">Grama</li>
-                    <li class="poison type">Veneno</li>
-                </ul>
+            <p class="p1">
+                Scan the QR code to visit Frontend Mentor and take yout coding skills to the next level</p>
 
-                <p class="description">Quando o bulbo em suas costas cresce, parece perder a capacidade de ficar em pé
-                    com suas patas traseiras.</p>
-            </li>
-            <li class="pokemon-card">
-                <div class="information">
-                    <span>Venusaur</span>
-                    <span>#003</span>
-                </div>
-
-                <img src="./src/imagens/venusaur.gif" alt="Venusaur" class="gif">
-
-                <ul class="types">
-                    <li class="grass type">Grama</li>
-                    <li class="poison type">Veneno</li>
-                </ul>
-
-                <p class="description">Sua planta floresce quando está absorvendo energia solar. Ele permanece em
-                    movimento para buscar a luz solar.</p>
-            </li>
-            <li class="pokemon-card">
-                <div class="information">
-                    <span>Charmander</span>
-                    <span>#004</span>
-                </div>
-
-                <img src="./src/imagens/charmander.gif" alt="Charmander" class="gif">
-
-                <ul class="types">
-                    <li class="fire type">Fogo</li>
-                </ul>
-                <p class="description">Tem preferência por coisas quentes. Quando chove, diz-se que o vapor jorra da
-                    ponta de sua cauda.</p>
-            </li>
-            <li class="pokemon-card">
-                <div class="information">
-                    <span>Charmeleon</span>
-                    <span>#005</span>
-                </div>
-                <img src="./src/imagens/charmeleon.gif" alt="Charmeleon" class="gif">
-                <ul class="types">
-                    <li class="fire type">Fogo</li>
-                </ul>
-                <p class="description">Charmeleon é um Pokérmon reptiliano. Ele tem escamas vermelhas na sua parte
-                    inferior. Existe um chifre na parte de trás da cabeça. Ele tem olhos verdes e um focinho comprido.
-                </p>
-            </li>
-            <li class="pokemon-card">
-                <div class="information">
-                    <span>Charizard</span>
-                    <span>#006</span>
-                </div>
-                <img src="./src/imagens/charizard.gif" alt="Charizard" class="gif">
-                <ul class="types">
-                    <li class="fire type">Fogo</li>
-                    <li class="flying type">Voador</li>
-                </ul>
-                <p class="description">Charizard é um Pokémon dracônico e bípede. É principalmente laranja com uma parte
-                    inferior creme do peito até a ponta da cauda. Tem um pescoço longo, pequenos olhos azuis, narinas
-                    ligeiramente levantadas e duas estruturas semelhantes a chifres saindo da parte de trás de sua
-                    cabeça retangular.</p>
-            </li>
-            <li class="pokemon-card">
-                <div class="information">
-                    <span>Squirtle</span>
-                    <span>#007</span>
-                </div>
-                <img src="./src/imagens/squirtle.gif" alt="Squirtle" class="gif">
-
-                <ul class="types">
-                    <li class="water type">Água</li>
-
-                </ul>
-
-                <p class="description">Tem uma pele azul claro e usa um casco e junto também tem uma
-                    calda longa azul.</p>
-
-            </li>
-
-            <li class="pokemon-card">
-                <div class="information">
-                    <span>Wartortle</span>
-                    <span>#008</span>
-                </div>
-
-                <img src="./src/imagens/wartortle.gif" alt="Wartortle" class="gif">
-
-                <ul class="types">
-                    <li class="water type">Água</li>
-
-                </ul>
-
-                <p class="description">Sua cauda é grande e coberta com um pêlo rico e grosso. A cauda torna-se cada vez
-                    mais profunda na cor à medida que Wartortle envelhece. Os arranhões em sua concha são uma evidência
-                    da dureza deste Pokémon como um lutador.</p>
-            </li>
-            <li class="pokemon-card">
-                <div class="information">
-                    <span>Blastoise</span>
-                    <span>#009</span>
-                </div>
-
-                <img src="./src/imagens/blastoise.gif" alt="Blastoise" class="gif">
-
-                <ul class="types">
-                    <li class="water type">Água</li>
-
-                </ul>
-
-                <p class="description">Blastoise tem canhões de água que se projetam de seu casco. Os canhões de água
-                    são muito precisos. Eles podem disparar balas de água com uma precisão suficiente para atacar latas
-                    vazias de uma distância de mais de 160 pés.</p>
-            </li>
-            <li class="pokemon-card">
-                <div class="information">
-                    <span>Caterpie</span>
-                    <span>#010</span>
-                </div>
-
-                <img src="./src/imagens/caterpie.gif" alt="caterpie" class="gif">
-
-                <ul class="types">
-                    <li class="bug type">Inseto</li>
-
-                </ul>
-
-                <p class="description">Sua pele é verde, tem olhos amarelos com púpilas pretas, tem uma antena vermelha
-                    e tem uma "boca" verde, tem quatro pequenas patas amarelas e em seu corpo, existem vários círculos
-                    amarelos e na ponta de sua calda tem uma espécie de chocalho.</p>
-            </li>
-
-
-
-    </main>
-
-    <script src="./src/js/index.js"></script>
+        </div>
+    </div>
 </body>
 
 </html>
